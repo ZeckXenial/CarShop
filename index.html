@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="src/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <title>CarShop</title>
+  </head>
+  <body class="container">
+    <nav class="container" id="navbar-top">
+    <div class="navbar navbar-dark" id="nodenavbar" style="margin-bottom: 40px;" >
+    <a class="navbar-brand">
+      <img src="/Shopbag.svg" class="btn" style="width: 65px;" data-toggle="modal" data-target="#loginform"></a>
+    </a>
+    <div class="form-floating" id="searchbar" style="position: fixed;"></div>
+    <h1 class="text-primary text-center" id="title"> My Shop </h1>
+    <ul class="nav nav-pills" >
+      <li class="nav-item">
+        <img class="nav-link btn" id="cartbtn" src="/cart.svg"  data-toggle="modal" data-target="#cart"  style="width: 70px;">
+      </li>
+    </div>
+    <div></div>
+    </nav>
+    <header id="carrusel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://laoferta.cl/wp-content/images/9716-1.jpg" alt="First slide">
+          <div class="carousel-caption text-black d-none d-md-block">
+            <h5>Todo lo que necesitas en tu despensa!</h5>
+            <p>Siempre tenemos los precios mas competitivos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://i0.wp.com/chocale.cl/wp-content/uploads/2022/02/descuentos-febrero.jpg?fit=1200%2C800&ssl=1" alt="Second slide">
+          <div class="carousel-caption text-black d-none d-md-block">
+            <h5>Tenemos promociones y descuento inigualables!</h5>
+            <p>Estamos comprometidos con el buen precio!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://s1.eestatic.com/2021/05/28/ciencia/nutricion/584702647_186499571_1706x960.jpg" alt="Third slide">
+          <div class="carousel-caption text-black d-none d-md-block">
+            <h5>Verduras y Frutas frescas y de la mejor calidad!</h5>
+            <p>Tenemos expertos de la comida saludable</p>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </header>
+<div id="product"></div>
+<div class="modal fade" id="loginform" tabindex="-1" data-backdrop="static">
+  <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+             <h4 class="modal-title">Inicio de sesion</h4>
+          </div>
+         <div class="modal-body" id="form-modal">
+         <form class="form-horizontal"  action="/action_page.php">
+               <div class="form-group ">
+                   <div class="col-sm-10 form-floating ">
+                     <input required type="user" class="form-control" id="userinput" placeholder="Username">
+                     <label for="">Usuario</label>
+                   </div>
+               </div>
+               <div class="form-group">
+                <div class="col-sm-10 form-floating ">
+                  <input required type="user" class="form-control" id="passwordinput" placeholder="Password" style="margin-top: 30px;">
+                  <label for="">Contraseña</label>
+                 
+                </div>
+               </div>
+               <div class="form-group">
+                   <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox container justify-content-center" >
+                              <label><input type="checkbox">Recuerdame</label>
+                        </div>
+                   </div>
+               </div>
+               <div class="form-group">
+                   <div class="col-sm-offset-2 col-sm-10">
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                   </div>
+               </div>
+          </form>
+         </div>
+          <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+      </div>
+ </div>
+</div>
+<div class="modal fade" id="cart" data-backdrop="static">
+   <div class="modal-dialog modal-lg modal-dialog-centered">
+       <div class="modal-content">
+           <div class="modal-header">
+              <h4 class="modal-title">Carrito de compra</h4>
+           </div>
+          <div class="modal-body" id="modal-body">
+            <div class="container">
+              <div class="row">
+                  <main id="items" class="col-sm-8 row"></main>
+                      <ul id="carrito" class="list-group"></ul>
+                      <p class="text-center">Total: <span id="total"></span>&dollar;</p>
+              </div>
+          </div>
+           <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" id="clear">Vaciar</button>
+               <button type="button" data-toggle="modal" data-target="#shopform" class="btn btn-primary">Comprar</button>
+          </div>
+       </div>
+  </div>
+<div class=" modal fade" id="shopform" data-backdrop="static">
+   <div class="modal-dialog modal-lg modal-dialog-centered">
+       <div class="modal-content">
+           <div class= "modal-header">
+              <h4 class="modal-title" style="text-align: center;">Carrito de compra</h4>
+           </div>
+          <div class=" container modal-body">
+          <form>
+                <div class=" form-row">
+                   <div class="form-group col-md-6">
+                       <label class="text-center" for="inputEmail4">Email</label>
+                       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                   </div>
+                   <div class="form-group col-md-6">
+                       <label for="inputPassword4">Contraseña</label>
+                          <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                   </div>
+                   </div>
+                    <div class="form-group">
+                       <label for="inputAddress">Direccion</label>
+                       <input type="text" class="form-control" id="inputAddress" placeholder="Valparaiso , vaparaiso">
+                   </div>
+                   <div class="form-group">
+                       <label for="inputAddress2">Pais</label>
+                       <input type="text" class="form-control" id="inputAddress2" placeholder="Chile, Colombia">
+                   </div>
+                   <div class="form-row">
+                       <div class="form-group col-md-6">
+                       <label for="inputCity">Ciudad</label>
+                       <input type="text" class="form-control" id="inputCity">
+                   </div>
+                   <div class="form-group col-md-2">
+                        <label for="inputZip">Codigo postal</label>
+                         <input type="text" class="form-control" id="inputZip">
+                   </div>
+                </div>
+               <div class="form-group">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck"> Recordar </label>
+               </div>
+           </div>
+       </form>
+          </div>
+           <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+               <button type="button" class="btn btn-primary">Confirmar</button>
+          </div>
+       </div>
+  </div>
+</div>
+<script>
+  const domtitle= document.getElementById('title')
+  const domnav= document.getElementById('nodenavbar')
+  const domsearchbox= document.getElementById('searchbar')
+  document.addEventListener("DOMContentLoaded", function(){
+   setTimeout(() => domtitle.classList.add('out'), 5000)
+    setTimeout(()=> nodeinput(), 6000)
+   function nodeinput (){
+    const nodoinput = document.createElement('input');
+    nodoinput.classList.add("form-control")
+    nodoinput.classList.add("w-50")
+    nodoinput.classList.add("h-25")
+    nodoinput.classList.add("p-3")
+    nodoinput.setAttribute("type", "text")
+    nodoinput.setAttribute("id", "searchinput")
+    nodoinput.setAttribute("onkeyup", "search()")
+    nodoinput.setAttribute("placeholder","Buscar")
+    var parentnode=domtitle.parentNode;
+    domsearchbox.appendChild(nodoinput)
+    parentnode.replaceChild(nodoinput,domtitle)
+    nodoinput.classList.add("in")  
+    setTimeout(()=> nodoinput.classList.remove("in"), 1000)
+   }
+  })
+</script>
+<script>  function search() {
+  let input = document.getElementById('searchinput').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('cards');
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="flex";                 
+      }
+  }
+}</script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		window.addEventListener('scroll', function() {
+	       
+			if (window.scrollY > 150) {
+				document.getElementById('navbar-top').classList.add('fixed-top');
+				navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+				
+			} else {
+			 	document.getElementById('navbar-top').classList.remove('fixed-top');
+				document.body.style.paddingTop = '0';
+			} 
+		});
+	}); 
+</script>
+    <!-- <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script> -->
+<script >
+      function fetchinfo(response) {
+      fetch("/data/data.json")
+      .then(response => response.json())
+      .then(response => dynamism(response))
+      .catch(function (error){ 
+        console.log(error);
+      })}
+      fetchinfo();
+      
+    function dynamism(response){
+      const DOMitems = document.querySelector('#product');
+      const DOMcart =document.querySelector('#carrito');
+      const DOMtotal = document.querySelector('#total');
+      const DOMbotonVaciar = document.querySelector('#clear');
+      const data = response.productos
+      var carrito =[]
+      data.forEach((info)=> {
+        
+        const miNodo = document.createElement('div');
+        miNodo.classList.add('cards');
+        const miNodoCardBody = document.createElement('div');
+        miNodoCardBody.classList.add('card-body');
+        const miNodoTitle = document.createElement('h5');
+        miNodoTitle.classList.add('card-title');
+        miNodoTitle.classList.add('text-light');
+        miNodoTitle.textContent = info.item;
+        const miNodoImagen = document.createElement('img');
+        miNodoImagen.classList.add('img-fluid');
+        miNodoImagen.setAttribute('src', info.imagen);
+        const miNodoPrecio = document.createElement('p');
+        miNodoPrecio.classList.add('card-text');
+        miNodoPrecio.classList.add('text-light');
+        miNodoPrecio.textContent = `Precio: ${info.precio} $`;
+        const miNodoTipo = document.createElement('a');
+        miNodoTipo.classList.add('card-text');
+        miNodoTipo.classList.add('text-light');
+        miNodoTipo.classList.add('text-capitalize');
+        miNodoTipo.textContent = `Tipo: ${info.tipo} `;
+        miNodoTipo.setAttribute("data-bs-toggle","popover");
+        miNodoTipo.setAttribute("data-trigger","hover");
+        miNodoTipo.setAttribute("data-placement","top");
+        let string = info.item
+        let firstCharacter = string.charAt(0);
+        firstCharacter = firstCharacter.toUpperCase();
+        let capitalizedString = firstCharacter + string.slice(1);
+        miNodoTipo.setAttribute("title",capitalizedString);
+        miNodoTipo.setAttribute("tabindex","0");
+        miNodoTipo.setAttribute("data-content",`Marca: ${info.marca} \l Precio: ${info.precio} \l Tipo: ${info.tipo} \l`);
+        const miNodoBoton = document.createElement('button');
+        miNodoBoton.classList.add('btn', 'btn-primary');
+        miNodoBoton.classList.add('idevent');
+        miNodoBoton.textContent = 'Agregar al carro';
+        miNodoBoton.setAttribute('marcador', info.item);
+        miNodoBoton.addEventListener('click', addproduct);
+            miNodoCardBody.appendChild(miNodoImagen);
+                  miNodoCardBody.appendChild(miNodoTitle);
+                  miNodoCardBody.appendChild(miNodoTipo);
+                  miNodoCardBody.appendChild(miNodoPrecio);
+                  miNodoCardBody.appendChild(miNodoBoton);
+                  miNodo.appendChild(miNodoCardBody);
+                  DOMitems.appendChild(miNodo);   
+                  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                  return new bootstrap.Popover(popoverTriggerEl)
+                   })
+});
+    function addproduct(evento) {   
+                carrito.push(evento.target.getAttribute('marcador'))
+                renderizarCarrito();
+                functStorage();}
+                animate()
+    function renderizarCarrito() {
+      DOMcart.textContent = '';
+      const carritoSinDuplicados = [...new Set(carrito)];
+                carritoSinDuplicados.forEach((item) => {
+                  const miItem = data.filter((itemdata) => {
+                      return itemdata.item === item;
+                  });
+                    const numeroUnidadesItem = carrito.reduce((total, itemId) => {
+                        return itemId === item ? total += 1 : total;
+                    }, 0);
+                    const miNodo = document.createElement('li');
+                    miNodo.classList.add('list-group-item', 'text-center', 'mx-2');
+                    miNodo.style.backgroundBlendMode = "overlay"
+                    miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].item} - ${miItem[0].precio}`;
+                    const miBoton = document.createElement('button');
+                    miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+                    miBoton.textContent = 'X';
+                    miBoton.style.marginLeft = '1rem';
+                    miBoton.dataset.item = item;
+                    miBoton.addEventListener('click', borrarItemCarrito);
+                    miNodo.appendChild(miBoton);
+                    DOMcart.appendChild(miNodo);
+                });
+                      DOMtotal.textContent = calcularTotal();}  
+                  function borrarItemCarrito(evento) {
+                      const id = evento.target.dataset.item;
+                      carrito = carrito.filter((carritoId) => {
+                          return carritoId !== id;
+                      });
+                      renderizarCarrito();}
+                  function calcularTotal() {
+                    return carrito.reduce((total, item) => {
+                        const miItem = data.filter((itemdata) => {
+                            return itemdata.item === item;
+                        });
+                        return total + miItem[0].precio;
+                    }, 0).toFixed(2);}
+                        function vaciarCarrito() {
+                          carrito = [];
+                          renderizarCarrito();
+                          localStorage.clear();}
+                        function functStorage() {
+                            localStorage.setItem('carrito', JSON.stringify(carrito));}
+                        DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+                        function loadStorage () {
+                            if (localStorage.getItem('carrito') !== null) {
+                                carrito = JSON.parse(localStorage.getItem('carrito'));
+                            }}
+                          loadStorage();
+                          renderizarCarrito(); 
+                          function animate (){
+                           const btn = document.querySelectorAll('.idevent')
+                           const btnarr =[...btn]
+                          const shopbtn = document.querySelector('#cartbtn')
+                            btnarr.forEach((item) => {
+                              
+                              item.addEventListener('click', () => {
+                              shopbtn.classList.remove('animate')
+                              setTimeout(() => shopbtn.classList.add('animate'), 100)
+                            });
+                            })}  
+  }
+  </script> 
+  </body> 
+</html>

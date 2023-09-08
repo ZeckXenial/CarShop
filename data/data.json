@@ -1,0 +1,163 @@
+{
+	"productos" :[{
+		"item": "manzana roja",
+		"marca": "FrutosSur",
+		"imagen":"https://elegifruta.com.ar/wp-content/uploads/2017/07/manzana_roja.jpg",
+		"tipo": "granel",
+		"precio": 100,
+		"fechaProduccion": "2023-07-05"
+		},
+		{
+		"item": "naranja",
+		"marca": "ecuador",
+		"imagen":"https://metabolicas.sjdhospitalbarcelona.org/sites/default/files/styles/imagen_recurso_o_noticia/public/naranja-metabolica-sant-joan-deu.jpg?itok=s4sRx9Rf",
+		"tipo": "granel",
+		"precio": 150,
+		"fechaProduccion": "2023-07-05"
+		},
+		{
+		"item": "Platano",
+		"marca": "ecuador",
+		"imagen":"https://images.lider.cl/wmtcl?source=url[file:/productos/861623a.jpg]&scale=size[300x300]&sink",
+		"tipo": "granel",
+		"precio": 625,
+		"fechaProduccion": "2023-07-05"
+		},
+		{
+		"item": "Durazno",
+		"marca": "FrutosSur",
+		"imagen":"https://elpoderdelconsumidor.org/wp-content/uploads/2022/08/durazno-p.jpg",
+		"tipo": "granel",
+		"precio": 420,
+		"fechaProduccion": "2023-07-05"
+		},
+		{
+		"item": "Peras",
+		"marca": "ecuador",
+		"imagen":"https://www.semana.com/resizer/9jUsCntMhVstvbrZ6aFoCFcnEzk=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/ZIHKGWVUGVHOZPQ6XDCQBNKKZI.jpg",
+		"tipo": "granel",
+		"precio": 250,
+		"fechaProduccion": "2023-07-05"
+		},
+		{
+		"item": "Mango",
+		"marca": "ecuador",
+		"imagen":"https://images.lider.cl/wmtcl?source=url[file:/productos/331020a.jpg]&scale=size[449x449]&sink",
+		"tipo": "granel",
+		"precio": 876,
+		"fechaProduccion": "2023-07-05"
+		},
+
+		{
+			"item": "pastas",
+			"marca": "carozzi",
+			"imagen":"https://dipy.cl/cdn/shop/products/cl_z108025_500x.jpg?v=1661811374",
+			"tipo": "spaguetti",
+			"precio": 1550,
+			"fechaElab": "2023-03-16",
+			"fechaVenc": "null"
+			},
+			
+			{
+			"item": "arroz",
+			"marca": "tucapel",
+			"imagen":"https://i0.wp.com/www.distribuidorasantiago.cl/wp-content/uploads/2018/05/Tucapel-Arroz.jpg?fit=1200%2C1200&ssl=1",
+			"tipo": "grano largo",
+			"precio": 1200,
+			"fechaElab": "2022-05-21",
+			"fechaVenc": "null"
+			},
+	
+			{
+			"item": "porotos",
+			"marca": "ECUADOR",
+			"imagen":"https://s.cornershopapp.com/product-images/339705.png?versionId=1oBt9pNgRZz.4kVs5V71iLiqDyXAQHBq",
+			"tipo": "porotoNegro",
+			"precio": 1998,
+			"fechaElab": "2023-07-22",
+			"fechaVenc": "null"
+			},
+	
+			{
+			"item": "garbanzos",
+			"marca": "lider",
+			"imagen":"https://www.legumbrescaballero.com/wp-content/uploads/2013/10/garbanzo_mexico.jpg",
+			"tipo": "legumbres",
+			"precio": 1500,
+			"fechaElab": "2022-09-03",
+			"fechaVenc": "null"
+			},
+	
+			{
+			"item": "azucar",
+			"marca": "ianza",
+			"imagen":"https://dikkat.cl/wp-content/uploads/2021/08/Azucar-5-Kg.-Bolsa-Iansa.jpg",
+			"tipo": "blanca",
+			"precio": 1050,
+			"fechaElab": "2023-01-21",
+			"fechaVenc": "null"
+			},
+	
+			{
+			"item": "lentejas",
+			"marca": "lider",
+			"imagen":"https://s.cornershopapp.com/product-images/4135787.jpg?versionId=wsXq775ILGWP2xp6aTPHOZSTffhCusvp",
+			"tipo": "legumbres",
+			"precio": 1100,
+			"fechaElab": "2023-04-18",
+			"fechaVenc": "null"
+			},
+	
+			{
+			"item": "te",
+			"marca": "supremo",
+			"imagen":"https://cdnx.jumpseller.com/serviceshop/image/14607603/thumb/540/540?1654520125",
+			"tipo": "lipton",
+			"precio": 2150,
+			"fechaElab": "2023-04-11",
+			"fechaVenc": "null"
+			},
+
+			{
+				"item": "Shampoo",
+				"marca": "pantene",
+				"imagen":"https://images.lider.cl/wmtcl?source=url[file:/productos/905257a.jpg]&sink",
+				"tipo": "caida cabello",
+				"precio": 2550,
+				"fechaElab": "2022-05-19"
+				},
+				{
+				"item": "Jabon",
+				"marca": "dove",
+				"imagen":"https://eliteprofessionalcl.vtexassets.com/arquivos/ids/158846-800-auto?v=638162166214430000&width=800&height=auto&aspect=true",
+				"tipo": "corporal",
+				"precio": 1800,
+				"fechaElab": "2022-12-18"
+				},
+				
+				{
+				"item": "desodorante",
+				"marca": "old spice",
+				"imagen":"https://jumbo.vtexassets.com/arquivos/ids/416005/Desodorante-en-aerosol-marine-2-un.jpg?v=637479988759030000",
+				"tipo": "corporal",
+				"precio": 1680,
+				"fechaElab": "2022-07-22"
+				},
+				{
+				"item": "crema",
+				"marca": "nivea",
+				"imagen":"data:image/jpeg;base64,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",
+				"tipo": "facial",
+				"precio": 2200,
+				"fechaElab": "2022-07-05"
+				},
+				{
+				"item": "Shampoo",
+				"marca": "family",
+				"imagen":"https://falabella.scene7.com/is/image/Falabella/gsc_119241195_2234624_1?wid=1500&hei=1500&qlt=70",
+				"tipo": "control caspa",
+				"precio": 1820,
+				"fechaElab": "2023-01-18"
+				}
+	]
+}

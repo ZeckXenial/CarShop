@@ -1,0 +1,69 @@
+{
+	"productos": [{
+		"item": "pastas",
+		"marca": "carozzi",
+		"tipo": "spaguetti",
+		"precio": 1550,
+		"fechaElab": 2023-03-16,
+		"fechaVenc": "null"
+		},
+		
+		{
+		"item": "arroz",
+		"marca": "tucapel",
+		"tipo": "grano largo",
+		"precio": 1200,
+		"fechaElab": 2022-05-21,
+		"fechaVenc": "null"
+		},
+
+		{
+		"item": "porotos",
+		"marca": "ECUADOR",
+		"tipo": "porotoNegro",
+		"precio": 1998,
+		"fechaElab": 2023-07-22,
+		"fechaVenc": "null"
+		},
+
+		{
+		"item": "garbanzos",
+		"marca": "lider",
+		"tipo": "legumbres",
+		"precio": 1500,
+		"fechaElab": 2022-09-03,
+		"fechaVenc": "null"
+		},
+
+		{
+		"item": "azucar",
+		"marca": "ianza",
+		"tipo": "blanca",
+		"precio": 1050,
+		"fechaElab": 2023-01-21,
+		"fechaVenc": "null"
+		},
+
+		{
+		"item": "lentejas",
+		"marca": "lider",
+		"tipo": "legumbres",
+		"precio": 1100,
+		"fechaElab": 2023-04-18,
+		"fechaVenc": "null"
+		},
+
+		{
+		"item": "te",
+		"marca": "supremo",
+		"tipo": "lipton",
+		"precio": 2150,
+		"fechaElab": 2023-04-11,
+		"fechaVenc": "null"
+		}
+]
+}
+
+
+	
+	

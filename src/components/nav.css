@@ -1,0 +1,24 @@
+.nav {
+    background-color: darkslategrey;
+    
+}
+.container MDBNavbar MDBBtn{
+    width: 50px;
+    background-color: lightcyan;
+    
+}
+.container header {
+    width: unset;
+    text-align: center;
+}
+.container img {
+    position: absolute; right: 15px; top: 50px;
+    width: 50px;
+    display: flex;
+    margin-right: 10px; 
+    justify-content: right;
+
+}
+.container{
+    justify-content: center;
+}

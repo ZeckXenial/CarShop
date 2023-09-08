@@ -1,0 +1,45 @@
+{
+	"productos": [{
+		"item": "Shampoo",
+		"marca": "pantene",
+		"tipo": "caida cabello",
+		"precio": 2550,
+		"fechaElab": 2022-05-19
+		},
+		{
+		"item": "Jabon",
+		"marca": "dove",
+		"tipo": "corporal",
+		"precio": 1800,
+		"fechaElab": 2022-12-18
+		},
+		{
+		"item": "Jabon",
+		"marca": "dove",
+		"tipo": "intimo",
+		"precio": 2100,
+		"fechaElab": 2022-05-18
+		},
+		{
+		"item": "desodorante",
+		"marca": "old spice",
+		"tipo": "corporal",
+		"precio": 1680,
+		"fechaElab": 2022-07-22
+		},
+		{
+		"item": "crema",
+		"marca": "nivea",
+		"tipo": "facial",
+		"precio": 2200,
+		"fechaElab": 2022-07-05
+		},
+		{
+		"item": "Shampoo",
+		"marca": "family",
+		"tipo": "control caspa",
+		"precio": 1820,
+		"fechaElab": 2023-01-18
+		}
+	]
+}
